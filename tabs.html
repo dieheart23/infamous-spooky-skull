@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+
+<meta charset="UTF-8"> 
+
+<title>Tabs Example</title> 
+
+<style> 
+
+.tab-button.active { 
+
+background-color: #fff; 
+
+border-bottom: 2px solid #007bff; 
+
+
+
+} 
+
+
+
+
+
+
+.tab-panel { 
+display: none; 
+
+
+} 
+
+
+
+
+
+.tab-panel.active { 
+display: block; 
+
+
+} 
+
+
+</style> 
+
+</head> 
+<body> 
+
+<h1>Tabs Example</h1> 
+
+
+<div class="tabs"> 
+
+<div class="tab-list"> 
+
+<button class="tab-button active" data-tab="html">HTML</button> 
+
+<button class="tab-button" data-tab="css">CSS</button> 
+
+<button class="tab-button" data-tab="js">JavaScript</button> 
+
+
+
+</div> 
+
+
+
+
+
+
+<div class="tab-panels"> 
+
+<div class="tab-panel active" id="html"> 
+<p>HTML provides structure.</p> 
+
+
+</div> 
+
+<div class="tab-panel" id="css"> 
+<p>CSS controls appearance.</p> 
+
+
+</div> 
+
+<div class="tab-panel" id="js"> 
+<p>JavaScript adds behavior.</p> 
+
+
+</div> 
+
+
+
+</div> 
+
+
+</div> 
+
+
+<script src="tabs.js" defer></script> 
+
+</body> 
+</html>
