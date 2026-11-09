@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+
+<meta charset="UTF-8"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<title>Interactive Cards</title> 
+
+<style>
+
+body { font-family: sans-serif; padding: 20px; } 
+
+.card-container { display: flex; gap: 16px; flex-wrap: wrap; } 
+
+.card { 
+
+border: 2px solid #ccc; 
+
+border-radius: 8px; 
+
+padding: 16px; 
+
+width: 200px; 
+
+cursor: pointer; 
+
+transition: all 0.2s ease; 
+
+
+
+} 
+
+.card.selected { 
+
+border-color: #007bff; 
+
+background-color: #e7f1ff; 
+
+transform: scale(1.03); 
+
+
+
+} 
+
+.card h3 { margin: 0 0 8px; } 
+
+.card p { margin: 0; color: #555; } 
+
+#status { margin-top: 16px; font-weight: bold; } 
+
+
+
+</style> 
+
+</head> 
+<body> 
+
+
+<h1>Choose Your Interests</h1> 
+
+<div class="card-container" id="card-container"></div> 
+
+<p id="status">No interests selected.</p> 
+
+<script src="js/cards.js"></script> 
+
+
+
+</body> 
+</html>
