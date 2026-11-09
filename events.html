@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverbend Yoga Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <!-- ================= nav ============== -->
+    <header>
+      
+        <h1>Riverbend Yoga Studio</h1>
+        <img src="images/yoga-logo_c.png" alt="Riverbend Yoga Studio Logo" width="200" height="200">
+        <nav>
+            <ul class =navigation-links>
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="events.html">Events</a></li>
+                <li><a class="link" href="services.html">Services</a></li>
+                <li><a class="link" href="about.html">About</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- ================= monthly workshop list ================= -->
+     <h2>Monthly Workshops</h2>
+     <section  class="text"> 
+       <ul>
+            <li>January: Mindful Meditation Workshop</li>
+            <li>February: Partner Yoga Workshop</li>
+            <li>March: Spring Detox Yoga Workshop</li>
+            <li>April: Yoga for Stress Relief Workshop</li>
+            <li>May: Yoga and Nutrition Workshop</li>
+            <li>June: Summer Solstice Yoga Workshop</li>
+            <li>July: Outdoor Yoga Adventure Workshop</li>
+            <li>August: Back to School Yoga Workshop</li>
+            <li>September: Fall Equinox Yoga Workshop</li>
+            <li>October: Halloween Yoga Costume Party Workshop</li>
+            <li>November: Gratitude and Mindfulness Workshop</li>
+            <li>December: Holiday Relaxation and Reflection Workshop</li>
+        </ul>
+
+    </section>
+    
+    <!-- ================= "request a spot" interest form ================= -->
+    <section id="request-spot">
+        <h2>Request a Spot in a Workshop</h2>
+        <form id="requestForm" action="submit_request.php" method="post">
+            <fieldset>
+                <legend>Workshop Request Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" ><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ><br><br>
+            
+
+            <label for="workshopSelect">Workshop Interested In:</label>
+            <select id="workshopSelect" name="workshopSelect" required>
+                <option value="">--Please choose a workshop--</option>
+                <option value="mindful-meditation">Mindful Meditation Workshop</option>
+                <option value="partner-yoga">Partner Yoga Workshop</option>
+                <option value="spring-detox">Spring Detox Yoga Workshop</option>
+                <option value="stress-relief">Yoga for Stress Relief Workshop</option>
+                <option value="nutrition">Yoga and Nutrition Workshop</option>
+                <option value="summer-solstice">Summer Solstice Yoga Workshop</option>
+                <option value="outdoor-adventure">Outdoor Yoga Adventure Workshop</option>
+                <option value="back-to-school">Back to School Yoga Workshop</option>
+                <option value="fall-equinox">Fall Equinox Yoga Workshop</option>
+                <option value="halloween-costume">Halloween Yoga Costume Party Workshop</option>
+                <option value="gratitude-mindfulness">Gratitude and Mindfulness Workshop</option>
+                <option value="holiday-relaxation">Holiday Relaxation and Reflection Workshop</option>
+               
+            </select><br><br>
+            <label for="survey">What is your level of experience? </label>
+            <input textarea name="message" minlength="3" required placeholder="Tell us your level of experience"> </textarea>
+            <input type="submit" value="Submit Request">
+        </form>
+
+    </section>
+            
+
+    <script src="js/scripts.js"></script>
+
+    </main>
